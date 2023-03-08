@@ -1,18 +1,12 @@
-//
-//  ContentView.swift
-//  Swift_UI
-//
-//  Created by Paulo Afonso Della Mêa dos Santos on 08/03/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Testing UI!")
+        VStack{
+            Text("SwiftUI")
+            Text("Swift")
+            Text("UI")
         }
-        .padding()
     }
 }
 
@@ -21,3 +15,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+// VStack = Vertical StackView
+// HStack = Horizontal Stack
+// ZStack -> One element above other ->  Used with images
