@@ -25,7 +25,23 @@ struct ContentView: View {
                 .frame(width: view.size.width, height: 180, alignment: .top)
                 .background(Color.orange)
                 // Ignore SafeArea
-                .edgesIgnoringSafeArea(.all)
+                //.edgesIgnoringSafeArea(.all)
+                HStack{
+                    Button(action: {}) {
+                        Text("Button 1")
+                            .font(.custom("Avenir Medium", size: 17))
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
+                    }
+                    .frame(width: 100, height: 50)
+                    .background(.yellow)
+                    Button(action: {}) {
+                        Text("Button 2")
+                            .font(.custom("Avenir Medium", size: 17))
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
+                    }
+                    .frame(width: 100, height: 50)
+                    .background(.yellow)
+                }
                 List {
                     Text("Item 1")
                     Text("Item 2")
@@ -35,7 +51,7 @@ struct ContentView: View {
                 }
             }
             
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 
