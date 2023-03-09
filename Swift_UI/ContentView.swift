@@ -34,6 +34,11 @@ struct ContentView: View {
                     }
                     .frame(width: 100, height: 50)
                     .background(.yellow)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 10))
+                    .offset(x: 50)
+                    
+                    
+                    Spacer()
                     Button(action: {}) {
                         Text("Button 2")
                             .font(.custom("Avenir Medium", size: 17))
@@ -41,7 +46,11 @@ struct ContentView: View {
                     }
                     .frame(width: 100, height: 50)
                     .background(.yellow)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 10))
+                    .offset(x: -50)
                 }
+                .offset(y: -30)
+                
                 List {
                     Text("Item 1")
                     Text("Item 2")
