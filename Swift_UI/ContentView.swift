@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        
+        let person: [Person] = personsArray
         GeometryReader{ view in
             
             // Principal VStack
@@ -50,18 +51,32 @@ struct ContentView: View {
                     .offset(x: -50)
                 }
                 .offset(y: -30)
-                
-                List {
-                    Text("Item 1")
-                    Text("Item 2")
-                    Text("Item 3")
-                    Text("Item 4")
-                    Text("Item 5")
+                NavigationView{
+                    List {
+                        ForEach(person, id: \.firstName) { person in
+                            
+                            NavigationLink("\(person.firstName) \(person.surname)", destination: DetailView(person: person)).bold()
+                            VStack(alignment: .leading){
+                                
+                                Image(person.imageName)
+                                    .resizable()
+                                    .frame(height: 125)
+                                Text("\(person.phoneNumbers[0].number)")
+                                    
+                            }
+                        
+                        }
+                    }
                 }
+                
+                
             }
+            .background(Color.white.grayscale(0.3))
             
         }.edgesIgnoringSafeArea(.all)
+        
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

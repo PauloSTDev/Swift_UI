@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A30014529BF949200A4D8B0 /* PersonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30014429BF949200A4D8B0 /* PersonManager.swift */; };
+		7A30014729BF960D00A4D8B0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30014629BF960D00A4D8B0 /* DetailView.swift */; };
 		7A5803C029B8AF1200179A1E /* Swift_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5803BF29B8AF1200179A1E /* Swift_UIApp.swift */; };
 		7A5803C229B8AF1200179A1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5803C129B8AF1200179A1E /* ContentView.swift */; };
 		7A5803C429B8AF1300179A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A5803C329B8AF1300179A1E /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A30014429BF949200A4D8B0 /* PersonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManager.swift; sourceTree = "<group>"; };
+		7A30014629BF960D00A4D8B0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7A5803BC29B8AF1200179A1E /* Swift_UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5803BF29B8AF1200179A1E /* Swift_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UIApp.swift; sourceTree = "<group>"; };
 		7A5803C129B8AF1200179A1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		7A5803B329B8AF1200179A1E = {
 			isa = PBXGroup;
 			children = (
+				7AAAE6F429BB8D7F005A6318 /* Models */,
 				7A5803BE29B8AF1200179A1E /* Swift_UI */,
 				7A5803CF29B8AF1300179A1E /* Swift_UITests */,
 				7A5803D929B8AF1300179A1E /* Swift_UIUITests */,
@@ -106,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				7A5803C629B8AF1300179A1E /* Preview Assets.xcassets */,
+				7A30014629BF960D00A4D8B0 /* DetailView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				7A5803DC29B8AF1300179A1E /* Swift_UIUITestsLaunchTests.swift */,
 			);
 			path = Swift_UIUITests;
+			sourceTree = "<group>";
+		};
+		7AAAE6F429BB8D7F005A6318 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A30014429BF949200A4D8B0 /* PersonManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A5803C229B8AF1200179A1E /* ContentView.swift in Sources */,
+				7A30014729BF960D00A4D8B0 /* DetailView.swift in Sources */,
+				7A30014529BF949200A4D8B0 /* PersonManager.swift in Sources */,
 				7A5803C029B8AF1200179A1E /* Swift_UIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
