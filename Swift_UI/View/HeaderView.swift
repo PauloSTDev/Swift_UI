@@ -1,12 +1,15 @@
+//
+//  HeaderView.swift
+//  Swift_UI
+//
+//  Created by Paulo Afonso Della Mêa dos Santos on 17/03/23.
+//
+
 import SwiftUI
 
-struct ContentView: View {
-    
-    var body: some View {
-        let person: [Person] = personsArray
+struct HeaderView: View {
+    var body: some View{
         GeometryReader{ view in
-            
-            // Principal VStack
             VStack{
                 // Header VStack
                 VStack{
@@ -51,40 +54,15 @@ struct ContentView: View {
                     .offset(x: -50)
                 }
                 .offset(y: -30)
-                NavigationView{
-                    List {
-                        ForEach(person, id: \.firstName) { person in
-                            
-                            NavigationLink("\(person.firstName) \(person.surname)", destination: DetailView(person: person)).bold()
-                            VStack(alignment: .leading){
-                                
-                                Image(person.imageName)
-                                    .resizable()
-                                    .frame(height: 125)
-                                Text("\(person.phoneNumbers[0].number)")
-                                    
-                            }
-                        
-                        }
-                    }
-                }
-                
-                
             }
-            .background(Color.white.grayscale(0.3))
-            
-        }.edgesIgnoringSafeArea(.all)
+        }
         
     }
-
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HeaderView()
+            .previewLayout(.fixed(width: 400, height: 220))
     }
 }
-
-// VStack = Vertical StackView
-// HStack = Horizontal Stack
-// ZStack -> One element above other ->  Used with images
