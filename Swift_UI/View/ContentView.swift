@@ -15,9 +15,7 @@ struct ContentView: View {
             .background(Color.white.grayscale(0.3))
             
         }.edgesIgnoringSafeArea(.all)
-        
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
